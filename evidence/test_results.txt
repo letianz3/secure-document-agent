@@ -1,0 +1,50 @@
+Interpreter: 3.13.9 (tags/v3.13.9:8183fa5, Oct 14 2025, 14:09:13) [MSC v.1944 64 bit (AMD64)]
+Mode: OFFLINE; provider HTTP mocked; site packages disabled.
+test_encrypted_roundtrip_and_corruption (test_credentials.CredentialTests.test_encrypted_roundtrip_and_corruption) ... ok
+test_environment_precedes_local_storage (test_credentials.CredentialTests.test_environment_precedes_local_storage) ... ok
+test_missing_local_key (test_credentials.CredentialTests.test_missing_local_key) ... ok
+test_benign_input_and_observation_both_checked (test_guardrails.GuardTests.test_benign_input_and_observation_both_checked) ... ok
+test_default_is_real_guard_not_test_double (test_guardrails.GuardTests.test_default_is_real_guard_not_test_double) ... ok
+test_detector_pass_does_not_bypass_rbac (test_guardrails.GuardTests.test_detector_pass_does_not_bypass_rbac) ... ok
+test_full_text_tail_and_normalization (test_guardrails.GuardTests.test_full_text_tail_and_normalization) ... ok
+test_guard_failure_stops_input_or_observation (test_guardrails.GuardTests.test_guard_failure_stops_input_or_observation) ... ok
+test_input_block_precedes_llm_and_tool (test_guardrails.GuardTests.test_input_block_precedes_llm_and_tool) ... ok
+test_oversized_scanner_input_fails_closed (test_guardrails.GuardTests.test_oversized_scanner_input_fails_closed) ... ok
+test_scanner_failure_is_not_silently_allowed (test_guardrails.GuardTests.test_scanner_failure_is_not_silently_allowed) ... ok
+test_tool_injection_never_reaches_second_model_call_or_returned_payload (test_guardrails.GuardTests.test_tool_injection_never_reaches_second_model_call_or_returned_payload) ... ok
+test_empty_candidates_rejected (test_provider.ProviderTests.test_empty_candidates_rejected) ... ok
+test_http_error_does_not_expose_response_body_or_key (test_provider.ProviderTests.test_http_error_does_not_expose_response_body_or_key) ... ok
+test_request_and_tool_response_contract (test_provider.ProviderTests.test_request_and_tool_response_contract) ... ok
+test_truncated_response_rejected (test_provider.ProviderTests.test_truncated_response_rejected) ... ok
+test_admin_cannot_cross_department_even_with_approval (test_security.SecurityTests.test_admin_cannot_cross_department_even_with_approval) ... ok
+test_allowed_department_and_public_read (test_security.SecurityTests.test_allowed_department_and_public_read) ... ok
+test_approval_bound_to_user_run_action_and_version (test_security.SecurityTests.test_approval_bound_to_user_run_action_and_version) ... ok
+test_approval_cannot_be_replayed (test_security.SecurityTests.test_approval_cannot_be_replayed) ... ok
+test_approved_delete_changes_state (test_security.SecurityTests.test_approved_delete_changes_state) ... ok
+test_audit_does_not_store_prompts_bodies_or_model_outputs (test_security.SecurityTests.test_audit_does_not_store_prompts_bodies_or_model_outputs) ... ok
+test_audit_failure_prevents_deletion (test_security.SecurityTests.test_audit_failure_prevents_deletion) ... ok
+test_changed_document_invalidates_approval (test_security.SecurityTests.test_changed_document_invalidates_approval) ... ok
+test_data_denial_has_no_content_and_hides_existence (test_security.SecurityTests.test_data_denial_has_no_content_and_hides_existence) ... ok
+test_employee_cannot_delete_even_with_approval_callback (test_security.SecurityTests.test_employee_cannot_delete_even_with_approval_callback) ... ok
+test_empty_or_oversized_input_never_calls_model (test_security.SecurityTests.test_empty_or_oversized_input_never_calls_model) ... ok
+test_endless_model_is_bounded (test_security.SecurityTests.test_endless_model_is_bounded) ... ok
+test_expired_approval_does_not_delete (test_security.SecurityTests.test_expired_approval_does_not_delete) ... ok
+test_invalid_model_output_stops_without_execution (test_security.SecurityTests.test_invalid_model_output_stops_without_execution) ... ok
+test_json_parser_rejects_ambiguous_and_malformed_output (test_security.SecurityTests.test_json_parser_rejects_ambiguous_and_malformed_output) ... ok
+test_listing_does_not_leak_restricted_metadata (test_security.SecurityTests.test_listing_does_not_leak_restricted_metadata) ... ok
+test_malicious_model_after_injected_observation_cannot_escalate (test_security.SecurityTests.test_malicious_model_after_injected_observation_cannot_escalate) ... ok
+test_missing_rejected_and_non_boolean_approvals_preserve_document (test_security.SecurityTests.test_missing_rejected_and_non_boolean_approvals_preserve_document) ... ok
+test_model_supplied_identity_approval_paths_and_unknown_tools_are_denied (test_security.SecurityTests.test_model_supplied_identity_approval_paths_and_unknown_tools_are_denied) ... ok
+test_observation_returns_to_model (test_security.SecurityTests.test_observation_returns_to_model) ... ok
+test_policy_change_during_approval_is_rechecked (test_security.SecurityTests.test_policy_change_during_approval_is_rechecked) ... ok
+test_timeout_prevents_tool_execution (test_security.SecurityTests.test_timeout_prevents_tool_execution) ... ok
+test_transcripts_are_isolated_across_users (test_security.SecurityTests.test_transcripts_are_isolated_across_users) ... ok
+test_unclassified_documents_default_to_deny (test_security.SecurityTests.test_unclassified_documents_default_to_deny) ... ok
+test_unknown_roles_and_identities_fail_closed (test_security.SecurityTests.test_unknown_roles_and_identities_fail_closed) ... ok
+test_interruption_rejects (test_terminal_approval.TerminalApprovalTests.test_interruption_rejects) ... ok
+test_only_explicit_approval_words_are_accepted (test_terminal_approval.TerminalApprovalTests.test_only_explicit_approval_words_are_accepted) ... ok
+
+----------------------------------------------------------------------
+Ran 43 tests in 0.063s
+
+OK

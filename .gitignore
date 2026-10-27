@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*
+runtime/
+dist/
+*.zip
+
+# Local credentials and editor files
+*.dpapi
+*.pem
+*.key
+.vscode/
+.idea/
